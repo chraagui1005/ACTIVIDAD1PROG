@@ -1,5 +1,6 @@
 package com.example.actividad1prog
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,7 +24,7 @@ class VideoGym : AppCompatActivity() {
         val btnVolver=findViewById<Button>(R.id.btnVolver)
         btnVolver.setOnClickListener {
             Log.i("ACTIVIDAD1PROG", "------BOTON ${btnVolver.id} PULSADO----- boton")
-
+            navegarHaciaApp(menuIntermedio::class.java)
         }
         val btnVideoPierna=findViewById<Button>(R.id.btnVideoPierna)
         btnVideoPierna.setOnClickListener {
@@ -52,5 +53,9 @@ class VideoGym : AppCompatActivity() {
             webView.settings.javaScriptEnabled = true
             webView.webChromeClient = WebChromeClient()
         }
+    }
+    fun navegarHaciaApp(clase:Class<*>){
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }
