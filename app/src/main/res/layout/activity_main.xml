@@ -6,4 +6,189 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bienvenidaApp"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <!-- bloque 2-->
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/relativeLayoutBienvenida"
+        android:background="@drawable/gymnasio1"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp"
+        tools:ignore="MissingConstraints">
+    </RelativeLayout>
+    <!-- bloque 3-->
+    <RelativeLayout
+        android:id="@+id/linearLayoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/relativeLayoutBackground"
+        android:layout_gravity="center_horizontal"
+        android:background="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutTrain"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp">
+
+
+        <TextView
+            android:id="@+id/txtAlimentos"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:rotationX="-8"
+            android:text="@string/txtAlimentate"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/txtRutinas"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:textColor="@color/white"
+            android:text="@string/txtRutina"
+            android:paddingVertical="45dp"
+            android:paddingLeft="20dp"
+
+            />
+        <TextView
+            android:id="@+id/txtCasas"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:textColor="@color/white"
+            android:text="@string/txtCasa"
+            android:paddingVertical="70dp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtMotivacion"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="@string/txtMotiva"
+            android:layout_marginTop="100dp"
+            android:paddingVertical="20dp"
+            android:paddingLeft="20dp"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgAlimentos"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#6C7AC6"
+            app:cardCornerRadius="50dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/alimentos"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgTrote"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            app:cardBackgroundColor="#6C7AC6"
+            app:cardCornerRadius="50dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/trota"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgPesas"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="#6C7AC6"
+            app:cardCornerRadius="50dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/pesas"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <!--bloque 4-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTrain"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/gym1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <Button
+            android:id="@+id/btnAEntrenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#808080"
+            android:text="¡A ENTRENAR!"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
