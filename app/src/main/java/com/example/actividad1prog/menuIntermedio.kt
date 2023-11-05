@@ -19,22 +19,22 @@ class menuIntermedio : AppCompatActivity() {
 
         btnDietas.setOnClickListener {
             Log.i("MENU -----", "LANZAMOS MENU DE DIETAS")
-            navegarHaciaApp(VideoGym::class.java) //recordar cambiar por el activity de dietas
+            navegarHaciaApp(VideoGym::class.java)
         }
 
         btnEjercicios.setOnClickListener {
             Log.i("MENU -----", "LANZAMOS MENU DE EJERCICIOS")
-            navegarHaciaApp(VideoGym::class.java) //recordar cambiar por el activity de ejercicios
+            navegarHaciaApp(VideoGym::class.java)
         }
 
         btnEjerciciosRapidos.setOnClickListener {
-            Log.i("MENU -----", "LANZAMOS MENU DE EJERCICIOS HIT")
-            navegarHaciaApp(VideoGym::class.java) //recordar cambiar por el activity de ejercicios Rapidos
+            Log.i("MENU -----", "LANZAMOS CALCULADORA")
+            navegarHaciaApp(Calculadora1::class.java)
         }
 
         btnVolver.setOnClickListener {
             Log.i("MENU -----", "REGRESAMOS AL MENU ANTERIOR")
-            navegarHaciaApp(MainActivity::class.java) //recordar cambiar por el activity principal
+            navegarHaciaApp(MainActivity::class.java)
         }
 
     }
