@@ -4,5 +4,11 @@
     <string name="etiqueta_pierna">RUTINA PARA PIERNAS FUERTES</string>
     <string name="etiqueta_brazo">RUTINA PARA BRAZOS FUERTES</string>
     <string name="etiqueta_pecho">RUTINA PARA PECHO FUERTE</string>
-
+    <!--TEXTOS DE MENU INTERMEDIO -->
+    <string name="saludo">¿Cómo puedo ayudarte?</string>
+    <string name="btnVolver">VOLVER</string>
+    <string name="verMas">VER MÁS</string>
+    <string name="textoDietas">Recuerda que para buenos resultados una buena alimentación es lo principal. </string>
+    <string name="textoEjercicios">Si lo que necesitas es aumentar tu masa muscular, una buena opción es levantar pesas.  </string>
+    <string name="textoEjerciciosRapidos">¿Te hace falta tiempo? No te preocupes, que un HIT es una buena opción para estar fit. </string>
 </resources>

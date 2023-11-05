@@ -5,5 +5,9 @@
     <color name="gray1">#B8B2B2</color>
     <color name="gray2">#777474</color>
     <color name="gray3">#575555</color>
+    <!--COLORES PARA MENU INTERMEDIO-->
 
+    <color name="saludo">#999999</color> <!--GRIS-->
+    <color name="btnMas">#000000</color> <!--NEGRO-->
+    <color name="textos">#FFFFFF</color> <!--BLANCO-->
 </resources>
