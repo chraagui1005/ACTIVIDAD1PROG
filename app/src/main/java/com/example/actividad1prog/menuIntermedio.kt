@@ -34,7 +34,7 @@ class menuIntermedio : AppCompatActivity() {
 
         btnVolver.setOnClickListener {
             Log.i("MENU -----", "REGRESAMOS AL MENU ANTERIOR")
-            navegarHaciaApp(VideoGym::class.java) //recordar cambiar por el activity principal
+            navegarHaciaApp(MainActivity::class.java) //recordar cambiar por el activity principal
         }
 
     }
