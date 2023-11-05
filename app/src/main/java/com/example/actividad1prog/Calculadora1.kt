@@ -38,7 +38,7 @@ class Calculadora1 : AppCompatActivity() {
             if (edadNum != null && pesoNum != null && alturaNum != null) {
                 val tiempoejercicio = edadNum - pesoNum + alturaNum
                 //Devolucion
-                txtResult.text = tiempoejercicio.toString()
+                txtResult.text = tiempoejercicio.toString() + " minutos"
             } else {
                 txtResult.text = "Datos Incorrectos"
             }

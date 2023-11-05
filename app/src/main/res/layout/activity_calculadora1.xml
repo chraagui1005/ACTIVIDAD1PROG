@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray1"
     tools:context=".Calculadora1">
 
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mensajeCalculadora"
-        android:background="@color/gray1"
+        android:background="@color/gray2"
         android:textAlignment="center"
         android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
@@ -35,6 +36,7 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -46,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtEdad"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+
         />
 
     <TextView
@@ -59,6 +62,7 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -83,6 +87,7 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -95,16 +100,18 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         />
+
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:background="#81D4FA"
+        android:layout_marginEnd="10dp"
+        android:background="#81FAAD"
+        android:gravity="center"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtAltura" />
