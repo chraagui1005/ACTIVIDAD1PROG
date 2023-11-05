@@ -24,41 +24,108 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <View
+    <LinearLayout
         android:id="@+id/cuadroPiernas"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#B8B2B2"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cuadroBrazos"
-        />
+        app:layout_constraintBottom_toTopOf="@id/cuadroBrazos">
 
-    <View
+        <TextView
+            android:id="@+id/txtRutPierna"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="RUTINA PARA PIERNAS FUERTES"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="20dp"
+            />
+        <Button
+            android:id="@+id/btnVideoPierna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="VER VIDEO"
+            app:iconTint="#DD0D0D"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/cuadroBrazos"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#777474"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cuadroPecho"
-        />
+        app:layout_constraintBottom_toTopOf="@id/cuadroPecho">
+        <TextView
+            android:id="@+id/txtRutBrazos"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="RUTINA PARA BRAZOS FUERTES"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="20dp"
+            />
+        <Button
+            android:id="@+id/btnVideoBrazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="VER VIDEO"
+            app:iconTint="#DD0D0D"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
 
-    <View
+    <LinearLayout
         android:id="@+id/cuadroPecho"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#575555"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/CuadroFinal"
-        />
+        app:layout_constraintBottom_toTopOf="@id/CuadroFinal">
+        <TextView
+            android:id="@+id/txtRutPecho"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="RUTINA PARA PECHO FUERTE"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="20dp"
+            />
+        <Button
+            android:id="@+id/btnVideoPecho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="VER VIDEO"
+            app:iconTint="#DD0D0D"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/CuadroFinal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/black"
-        android:layout_gravity=""
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
 

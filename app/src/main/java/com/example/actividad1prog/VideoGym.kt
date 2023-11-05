@@ -15,5 +15,17 @@ class VideoGym : AppCompatActivity() {
         btnVolver.setOnClickListener {
             Log.i("ACTIVIDAD1PROG", "------BOTON ${btnVolver.id} PULSADO----- boton")
         }
+        val btnVideoPierna=findViewById<Button>(R.id.btnVideoPierna)
+        btnVideoPierna.setOnClickListener {
+            Log.i("ACTIVIDAD1PROG", "------BOTON ${btnVideoPierna.id} PULSADO----- boton")
+        }
+        val btnVideoBrazo=findViewById<Button>(R.id.btnVideoBrazo)
+        btnVideoBrazo.setOnClickListener {
+            Log.i("ACTIVIDAD1PROG", "------BOTON ${btnVideoBrazo.id} PULSADO----- boton")
+        }
+        val btnVideoPecho=findViewById<Button>(R.id.btnVideoPecho)
+        btnVideoPecho.setOnClickListener {
+            Log.i("ACTIVIDAD1PROG", "------BOTON ${btnVideoPecho.id} PULSADO----- boton")
+        }
     }
 }
