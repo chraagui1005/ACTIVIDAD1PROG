@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ACTIVIDAD1PROG</string>
+    <string name="etiqueta_rutinagym">¡AUMENTA TU MASA MUSCULAR!</string>
+    <string name="etiqueta_pierna">RUTINA PARA PIERNAS FUERTES</string>
+    <string name="etiqueta_brazo">RUTINA PARA BRAZOS FUERTES</string>
+    <string name="etiqueta_pecho">RUTINA PARA PECHO FUERTE</string>
+
 </resources>

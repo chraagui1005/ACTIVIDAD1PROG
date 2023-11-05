@@ -11,8 +11,8 @@
         android:id="@+id/txtMensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¡AUMENTA TU MASA MUSCULAR!"
-        android:background="#959191"
+        android:text="@string/etiqueta_rutinagym"
+        android:background="@color/gray1"
         android:textAlignment="center"
         android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
@@ -24,26 +24,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/cuadroPiernas"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#B8B2B2"
-        android:orientation="vertical"
+        android:background="@color/gray1"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/cuadroBrazos">
+
 
         <TextView
             android:id="@+id/txtRutPierna"
             android:layout_width="260dp"
             android:layout_height="50dp"
-            android:text="RUTINA PARA PIERNAS FUERTES"
+            android:text="@string/etiqueta_pierna"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:paddingTop="20dp"
             android:paddingHorizontal="20dp"
             />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgPierna"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#6C7AC6"
+            app:cardCornerRadius="50dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/pierna"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+
         <Button
             android:id="@+id/btnVideoPierna"
             android:layout_width="wrap_content"
@@ -51,18 +77,20 @@
             android:backgroundTint="@color/black"
             android:textColor="@color/white"
             android:text="VER VIDEO"
-            app:iconTint="#DD0D0D"
-            android:layout_marginLeft="60dp"
-            android:layout_marginBottom="10dp"
+            app:iconTint="#DD-1D0D"
+            android:layout_marginLeft="59dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtRutPierna"
             />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/cuadroBrazos"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#777474"
-        android:orientation="vertical"
+        android:background="@color/gray2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/cuadroPecho">
@@ -70,12 +98,36 @@
             android:id="@+id/txtRutBrazos"
             android:layout_width="260dp"
             android:layout_height="50dp"
-            android:text="RUTINA PARA BRAZOS FUERTES"
+            android:text="@string/etiqueta_brazo"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:paddingTop="20dp"
             android:paddingHorizontal="20dp"
             />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgBrazo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#6C7AC6"
+            app:cardCornerRadius="50dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/brazos" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+
         <Button
             android:id="@+id/btnVideoBrazo"
             android:layout_width="wrap_content"
@@ -83,18 +135,20 @@
             android:backgroundTint="@color/black"
             android:textColor="@color/white"
             android:text="VER VIDEO"
-            app:iconTint="#DD0D0D"
-            android:layout_marginLeft="60dp"
-            android:layout_marginBottom="10dp"
+            app:iconTint="#DD-1D0D"
+            android:layout_marginLeft="59dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtRutBrazos"
             />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/cuadroPecho"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#575555"
-        android:orientation="vertical"
+        android:background="@color/gray3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/CuadroFinal">
@@ -102,12 +156,33 @@
             android:id="@+id/txtRutPecho"
             android:layout_width="260dp"
             android:layout_height="50dp"
-            android:text="RUTINA PARA PECHO FUERTE"
+            android:text="@string/etiqueta_pecho"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:paddingTop="20dp"
             android:paddingHorizontal="20dp"
             />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgPecho"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#6C7AC6"
+            app:cardCornerRadius="50dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/pecho"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
         <Button
             android:id="@+id/btnVideoPecho"
             android:layout_width="wrap_content"
@@ -116,10 +191,13 @@
             android:textColor="@color/white"
             android:text="VER VIDEO"
             app:iconTint="#DD0D0D"
-            android:layout_marginLeft="60dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtRutPecho"
             />
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/CuadroFinal"
@@ -139,7 +217,6 @@
             android:textColor="@color/black"
             android:text="VOLVER"
             android:textAlignment="center"
-            app:iconTint="#DD0D0D"
             app:layout_constraintBottom_toBottomOf="@id/CuadroFinal"
             app:layout_constraintEnd_toEndOf="@id/CuadroFinal"
             app:layout_constraintStart_toStartOf="@id/CuadroFinal"
